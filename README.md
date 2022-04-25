@@ -122,7 +122,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Заходим от пользователя, даем права на запуск оконника; редактируем конфиги
 
-`bash
+```bash
 mkdir ~/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
@@ -131,7 +131,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 echo ~/.xinitrc >> sxhkd& 
 echo ~/.xinitrc > exec bspwm
-`
+```
 
 
 # Дотфайлы
