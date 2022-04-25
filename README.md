@@ -142,3 +142,5 @@ echo ~/.xinitrc > exec bspwm
 
 # Дотфайлы
 ![Тут](https://github.com/zerocodex86/dotfiles)
+
+![img](https://raw.githubusercontent.com/github/explore/7b8474be525e3f210d3c8d60a32beca4bfc2895b/topics/archlinux/archlinux.png)
