@@ -2,8 +2,9 @@
 
 ## Разметка диска
 
-`bash 
-gdisk /dev/sda`
+```bash 
+gdisk /dev/sda
+```
 
 Необходимо создать 3 раздела(efi под boot, swap, и основной раздел) 
 Для создания раздела вводим: `n` 
@@ -30,8 +31,8 @@ btrfs su cr /mnt/@snapshots
 umount /mnt
 mount -o noatime,compress=zstd,ssd,subvol=@ /dev/sda3 /mnt
 mkdir -p /mnt/{home,boot,var,.snapshots}
-mount -o noatime,compress=zstd,ssd,subvol=@var /dev/sda3 /mnt/var
-mount -o noatime,compress=zstd,ssd,subvol=@home /dev/sda3 /mnt/home
+mount -o noatime,compress=zstd,subvol=@var /dev/sda3 /mnt/var
+mount -o noatime,compress=zstd,subvol=@home /dev/sda3 /mnt/home
 mount -o noatime,compress=zstd,subvol=@snapshots /dev/sda3 /mnt/.snapshots
 mount /dev/sda1 /mnt/boot
 ```
