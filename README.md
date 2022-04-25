@@ -97,7 +97,7 @@ pacman -Sy ranger bash-completion openssh arch-install-scripts networkmanager su
 ```
 ## Что-то там с ядром короче
 
-mkinitcpio -p linux
+`mkinitcpio -p linux`
 
 ## Юзеры
 
