@@ -34,7 +34,7 @@ btrfs su cr /mnt/@var
 btrfs su cr /mnt/@home
 btrfs su cr /mnt/@snapshots
 umount /mnt
-mount -o noatime,compress=zstd,ssd,subvol=@ /dev/sda3 /mnt
+mount -o noatime,compress=zstd,subvol=@ /dev/sda3 /mnt
 mkdir -p /mnt/{home,boot,var,.snapshots}
 mount -o noatime,compress=zstd,subvol=@var /dev/sda3 /mnt/var
 mount -o noatime,compress=zstd,subvol=@home /dev/sda3 /mnt/home
